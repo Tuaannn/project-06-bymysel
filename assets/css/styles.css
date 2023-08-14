@@ -48,6 +48,10 @@ input:-webkit-autofill:active {
     padding: 0;
 }
 
+.container-fluid {
+    width: 1330px;
+}
+
 a {
     text-decoration: none;
 }
@@ -642,9 +646,10 @@ a {
     width: 1009px;
     height: 2px;
     background-color: #08182f;
+    transition: all 0.5s linear;
 }
 
-.question__heading {
+.question-item__heading {
     margin-bottom: 33px;
     margin-top: 60px;
     /* 1 */
@@ -655,6 +660,7 @@ a {
     line-height: 1.25;
     letter-spacing: -1.28px;
     user-select: none;
+    transition: all 0.2s linear;
 }
 
 .question__desc {
@@ -684,6 +690,7 @@ a {
     display: none;
     width: 20px;
     height: 20px;
+    transition: all 0.5s linear;
 }
 
 .question__plus {
@@ -696,7 +703,7 @@ a {
     margin-bottom: 21px;
 }
 
-.question__input:checked ~ .question__content .question__heading {
+.question__input:checked ~ .question__content .question-item__heading {
     color: #5d3bee;
     margin: 23px 0;
 }
@@ -717,4 +724,194 @@ a {
 
 .question__input:checked ~ .question__separate {
     background-color: #5d3bee;
+}
+
+/* atmosphere */
+
+.atmosphere {
+    padding: 140px 0 160px;
+}
+
+.atmosphere__content {
+    text-align: center;
+}
+
+.atmosphere__desc {
+    margin-top: 20px;
+    max-width: 528px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.atmosphere__link {
+    display: block;
+    margin-top: 30px;
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+    text-decoration-line: underline;
+}
+
+.atmosphere__inner {
+    margin-top: 70px;
+}
+
+.atmosphere-item__img {
+    width: 370px;
+    height: 529px;
+    object-fit: cover;
+    display: block;
+}
+
+/* call */
+
+.call__inner {
+    position: relative;
+
+    padding: 68px 0;
+    background: #fbfaff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.call__heading {
+    margin-top: 20px;
+}
+
+.call__desc {
+    margin-top: 20px;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.call__btn {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.call__mobile-decor {
+    display: none;
+}
+
+.call__decor {
+    position: absolute;
+}
+
+.call__decor1 {
+    bottom: 0;
+    left: 0;
+}
+
+.call__decor2 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.call__decor3 {
+    top: 0;
+    right: 0;
+}
+
+/* footer */
+.footer {
+    margin-top: 50px;
+}
+
+.footer__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__top::after {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 1429px;
+    height: 1px;
+    background-color: rgb(12 7 32 / 20%);
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgb(93 59 238 / 20%);
+}
+
+.footer-info__desc {
+    color: #080415;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36;
+    text-decoration-line: underline;
+}
+
+.footer-list__item {
+    display: flex;
+    column-gap: 43px;
+}
+
+.footer__item {
+    color: #51586a;
+    font-size: 1.8rem;
+}
+
+.footer__item:hover {
+    text-shadow: 0.2px 0 0 currentColor, -0.2px 0 0 currentColor;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px 30px;
+}
+
+.footer-content {
+    display: flex;
+    column-gap: 36px;
+}
+
+.footer__copy-right,
+.footer__policy,
+.footer__teams {
+    color: #525771;
+    font-size: 1.8rem;
+    line-height: 1.667;
+}
+
+.footer__teams {
+    position: relative;
+}
+
+.footer__teams::before {
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 1px;
+    background-color: #525771;
 }
