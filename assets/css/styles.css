@@ -615,9 +615,11 @@ a {
 .feedback__dot--actived {
     width: 12px;
     height: 12px;
+    padding: 4px;
+    box-sizing: content-box;
+    background-clip: content-box;
     background-color: #5d3bee;
-    outline: 1px solid #5d3bee;
-    outline-offset: 4px;
+    border: 1px solid #5d3bee;
 }
 
 /* question */

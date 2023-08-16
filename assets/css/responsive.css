@@ -691,9 +691,11 @@
     .design__dot--actived {
         width: 12px;
         height: 12px;
+        box-sizing: content-box;
+        padding: 4px;
+        border: 1px solid #5d3bee;
+        background-clip: content-box;
         background-color: #5d3bee;
-        outline: 1px solid #5d3bee;
-        outline-offset: 4px;
     }
 
     /* project */
@@ -1032,9 +1034,11 @@
     .atmosphere__dot--actived {
         width: 12px;
         height: 12px;
+        box-sizing: content-box;
+        padding: 4px;
+        background-clip: content-box;
         background-color: #5d3bee;
-        outline: 1px solid #5d3bee;
-        outline-offset: 4px;
+        border: 1px solid #5d3bee;
     }
 
     /* call */

@@ -2,7 +2,7 @@
 /* No media query for `xs` since this is the default in Bootstrap */
 .container,
 .container-fluid {
-    --column-size: 12;
+    --column-sihttps://htmlcss.fullstack.edu.vn/?id=f38fd90d-eaa4-47f6-abdf-5f8496567b9aze: 12;
     --spacer: 40px;
 
     width: 100%;
